@@ -1,0 +1,19 @@
+extends ./layout/_home
+
+block append config
+	- var page = pagelist['home'];
+
+block append head
+	link(rel="stylesheet" href=ROOT_PATH+"css/home/style.css")
+	- var thisPageDir = 'top'
+
+block content
+	// main
+	main.main
+		.wrapper
+			section.section.section--01
+				p Web Enginner
+	// /main
+
+block append script
+	script(src=ROOT_PATH+"js/home.js")

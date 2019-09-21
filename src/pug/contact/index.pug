@@ -1,0 +1,22 @@
+extends ../layout/_page
+
+block append config
+	- var page = pagelist['contact'];
+
+block append head
+	link(rel="stylesheet" href=ROOT_PATH+"css/contact/style.css")
+
+block content
+	// main
+	main.main
+		.wrapper
+			.section.section--01
+				//- h1 #{page.name}
+				//- +breadcrumbs([
+				//- 	['ホーム', '/'],
+				//- 	[page.title, page.local_url]
+				//- ])
+	// /main
+
+block append script
+	script(src=ROOT_PATH+"js/contact.js")

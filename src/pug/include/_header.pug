@@ -1,0 +1,27 @@
+// header
+header.header
+  .header__title: a(href='/') yuriko mitani
+  -
+    var pages = [
+      {
+        pageName: 'About',
+        pageDir: 'about'
+      },
+      {
+        pageName: 'Product',
+        pageDir: 'product'
+      },
+      {
+        pageName: 'Contact',
+        pageDir: 'contact'
+      }
+    ]
+
+  ul.header__gnav
+    - for (var x = 0; x < pages.length; x++)
+      if pages[x]['pageDir']==page.name
+        li.header__gnav__item.is-current: a(href='/'+pages[x]['pageDir']+'/') #{pages[x]['pageName']}
+      else
+        li.header__gnav__item: a(href='/'+pages[x]['pageDir']+'/') #{pages[x]['pageName']}
+
+// /header

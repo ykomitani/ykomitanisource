@@ -1,0 +1,26 @@
+extends ../layout/_page
+
+block append config
+	- var page = pagelist['about'];
+
+block append head
+	link(rel="stylesheet" href=ROOT_PATH+"css/about/style.css")
+
+block content
+	// main
+	main.main
+		.wrapper
+			.section.section--01
+				//- +breadcrumbs([
+				//- 	['ホーム', '/'],
+				//- 	[page.title, page.local_url]
+				//- ])
+				.section__title.article
+					.article__title #{page.name}
+					ul.article__list
+						each val in ["名前：yuriko mitani", "出身：兵庫県神戸市", "活動：2007年に上京し、約12年間、web制作会社でwebサイトのコーディング担当", "趣味：散歩、メンタル強化活動、おかし作り", "ストレングスファインダー：・共感性・成長促進・回復思考・ポジティブ・コミュニケーション"]
+							li.article__list__item= val
+	// /main
+
+block append script
+	script(src=ROOT_PATH+"js/about.js")

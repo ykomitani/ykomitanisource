@@ -1,0 +1,23 @@
+// media
+
+$_pc: 769px;
+$_sp: 768px;
+
+@mixin pc {
+  @media screen and (min-width: $_pc) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: $_sp) {
+    @content;
+  }
+}
+
+
+// color
+
+$main_font: #455977;
+$main_bg: #EEEFF7;
+$white: #ffffff;
