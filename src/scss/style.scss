@@ -123,6 +123,12 @@
     &__item {
         .clm2 & {
             width: calc(100% / 2 - 20px);
+            @include sp {
+                width: 100%;
+                &:not(last-child) {
+                    margin-top: 40px;
+                }
+            }
         }
         .clm3 & {
             width: calc(100% / 3 - 20px);
