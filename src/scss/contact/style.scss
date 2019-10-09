@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+@import '../setting/reset';
+@import '../setting/config';
+@import '../setting/function';
+
+.section {
+    &--01 {
+        text-align: center;
+        padding: 140px 0;
+        .text {
+            opacity: 0.5;
+        }
+    }
+}
+

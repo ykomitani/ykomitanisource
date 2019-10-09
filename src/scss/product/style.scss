@@ -2,3 +2,13 @@
 
 @import '../setting/config';
 @import '../setting/function';
+
+.section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.clmContent {
+    &:not(last-child) {
+        margin-bottom: 40px;
+    }
+}

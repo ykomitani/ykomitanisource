@@ -11,11 +11,18 @@ block content
 	main.main
 		.wrapper
 			.section.section--01
-				//- h1 #{page.name}
+				.article__title #{page.name}
 				//- +breadcrumbs([
 				//- 	['ホーム', '/'],
 				//- 	[page.title, page.local_url]
 				//- ])
+				.clmContent.clm2
+					.clmContent__item
+						.title 任天堂 ファイアーエンブレム
+						p.text ファイアーエンブレム キャラクターページの設計を担当
+					.clmContent__item
+						p
+							img(src=IMG_PATH+"product/img-01.png" alt="")
 	// /main
 
 block append script

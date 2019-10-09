@@ -7,7 +7,7 @@
     "build": "webpack",
     "w": "npm-run-all -p watch:webpack watch:server"
   },
-  "author": "tsudoi yoshimoto",
+  "author": "yko",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.6.1",
